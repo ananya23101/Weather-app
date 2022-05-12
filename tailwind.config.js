@@ -11,6 +11,10 @@ module.exports = {
         third: '#1C1B33',
         
      },
+     screens:{
+      mg: '1000px',
+      ml: '850px'
+},
      fontFamily:{
       bob: ['Nunito'],
 },

@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 .card{
-    @apply bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 w-60 h-72 flex flex-col text-left items-center justify-center hover:scale-110 hover:transition-transform cursor-pointer p-8;
+    @apply bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 w-60 h-72 flex flex-col text-center items-center justify-center hover:scale-110 hover:transition-transform cursor-pointer p-8;
 }
 .card1{
-    @apply bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 w-60 h-72 flex flex-col text-left items-center justify-center hover:scale-110 hover:transition-transform cursor-pointer p-8;
+    @apply bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 w-60 h-72 flex flex-col text-center items-center justify-center hover:scale-110 hover:transition-transform cursor-pointer p-8;
 }
 .search{
     @apply opacity-75 w-128 h-8 bg-gradient-to-r from-secondary to-third shadow-md placeholder:opacity-100 placeholder:text-white border-2 border-white rounded p-2 outline-0 caret-white text-white mix-blend-screen mt-2;

@@ -474,10 +474,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.mr-12{
-  margin-right: 3rem;
-}
-
 .flex{
   display: flex;
 }
@@ -518,12 +514,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 5rem;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -547,24 +551,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 3.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
-}
-
-.pl-48{
-  padding-left: 12rem;
-}
-
-.pr-48{
-  padding-right: 12rem;
-}
-
-.pl-40{
-  padding-left: 10rem;
+.p-10{
+  padding: 2.5rem;
 }
 
 .font-bob{
@@ -621,7 +609,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.3;
   background-clip: padding-box;
   padding: 2rem;
-  text-align: left;
+  text-align: center;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -652,7 +640,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.1;
   background-clip: padding-box;
   padding: 2rem;
-  text-align: left;
+  text-align: center;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -723,4 +711,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #1C1B33;
   padding: 0.25rem;
   mix-blend-mode: screen;
+}
+
+@media (min-width: 850px){
+  .ml\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .ml\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .ml\:flex-row{
+    flex-direction: row;
+  }
+
+  .ml\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .ml\:pl-40{
+    padding-left: 10rem;
+  }
 }

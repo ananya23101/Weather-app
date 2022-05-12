@@ -13,12 +13,14 @@ function fetchApi(cityName){
  function matchCity(){
     cityName = this.value;
     fetchApi(cityName);
+    inVal.value = "";
  }
  
  function getInputValue(){
     var inputVal = inVal.value;
       cityName = inputVal;
     fetchApi(cityName);
+    inVal.value = "";
 }
 function displayWather(data1){
    var city = data1.name;
@@ -28,7 +30,7 @@ function displayWather(data1){
     var humid = data1.main.humidity;
     var speed = data1.wind.speed;
    document.querySelector('.card1').style.display = "none";
-  let stuff = `<div class="card mb-12 mr-12">
+  let stuff = `<div class="card mb-12 ml:mr-12">
    <h1 class="city text-white text-3xl">${city}</h1>
    <h3 class="temp text-white text-xl">${temperature}°C</h3>
    <img src="https://openweathermap.org/img/wn/${ico}.png" class="img w-20 h-20">
