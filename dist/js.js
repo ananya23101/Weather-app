@@ -30,7 +30,8 @@ function displayWather(data1){
     var humid = data1.main.humidity;
     var speed = data1.wind.speed;
    document.querySelector('.card1').style.display = "none";
-  let stuff = `<div class="card mb-12 ml:mr-12">
+  let stuff = `<div class="card mb-12 ml:mr-12 group">
+  <div class="remove invisible group-hover:visible"><img src="../src/1.png" class="w-4 h-4 remove1"></div>
    <h1 class="city text-white text-3xl">${city}</h1>
    <h3 class="temp text-white text-xl">${temperature}°C</h3>
    <img src="https://openweathermap.org/img/wn/${ico}.png" class="img w-20 h-20">
@@ -47,4 +48,12 @@ inVal.addEventListener('keypress', function(e){
 });
 search.addEventListener('click', getInputValue);
 let putvalue = document.querySelector('.list');
+
+document.addEventListener('click', function(e){
+   if(e.target.matches('.remove1'))
+   {
+      var element = e.target.parentElement.parentElement;
+      element.remove()
+   }
+})
 

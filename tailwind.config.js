@@ -1,8 +1,8 @@
 module.exports = {
   content: ['./src/**/*.html',
   './src/**/*.js',
-  './public/**/*.html',
-  './public/**/*.js'],
+  './dist/**/*.html',
+  './dist/**/*.js'],
   theme: {
     extend: {
       colors: {
@@ -21,6 +21,9 @@ module.exports = {
  width:{
   '128': '30rem',
  },
+ backgroundImage: {
+  'clear': "url('https://cdn.iconscout.com/icon/free/png-256/close-1912235-1617704.png')",
+},
      height: {
       "40v": "40vh",
      },

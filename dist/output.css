@@ -470,6 +470,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
+.z-0{
+  z-index: 0;
+}
+
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -490,6 +498,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
 .h-20{
   height: 5rem;
 }
@@ -508,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-12{
   width: 3rem;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .w-20{
@@ -594,10 +610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .card{
+  position: relative;
   display: flex;
   height: 18rem;
   width: 15rem;
-  cursor: pointer;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -608,7 +624,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
   background-clip: padding-box;
-  padding: 2rem;
   text-align: center;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -628,7 +643,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   height: 18rem;
   width: 15rem;
-  cursor: pointer;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -639,7 +653,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
   background-clip: padding-box;
-  padding: 2rem;
   text-align: center;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -711,6 +724,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #1C1B33;
   padding: 0.25rem;
   mix-blend-mode: screen;
+}
+
+.remove{
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  z-index: 10;
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.4;
+  background-clip: padding-box;
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.group:hover .group-hover\:visible{
+  visibility: visible;
 }
 
 @media (min-width: 850px){
