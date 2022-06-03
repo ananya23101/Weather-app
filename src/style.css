@@ -16,5 +16,5 @@
     @apply p-1 mt-2 border-t-2 border-r-2 border-b-2 rounded-r bg-gradient-to-r from-secondary to-third mix-blend-screen -ml-0.5;
 }
 .remove{
-    @apply bg-white rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 w-6 h-6 absolute -top-3 -right-3 flex justify-center items-center cursor-pointer z-10;
+    @apply bg-white rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 border border-gray-100 w-6 h-6 absolute -top-3 -right-3 flex justify-center items-center cursor-pointer z-10;
 }
