@@ -29,7 +29,7 @@ function displayWather(data1){
     var temperature = data1.main.temp;
     var humid = data1.main.humidity;
     var speed = data1.wind.speed;
-   document.querySelector('.card1').style.display = "none";
+   //document.querySelector('.card1').style.display = "none";
   let stuff = `<div class="card mb-12 ml:mr-12 group">
   <div class="remove invisible group-hover:visible"><img src="1.png" class="w-4 h-4 remove1"></div>
    <h1 class="city text-white text-3xl">${city}</h1>
